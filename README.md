@@ -21,6 +21,9 @@ Python 3.x
 
 Dependencies specified in requirements.txt
 
+(Optional) Download these .pkl files and add them to the folder to save time when initially running the project. The program searches for these files and if not found creates them and saves for future use.
+[Cache files link](https://drive.google.com/drive/folders/1tIeMKDZIsrmYuxMR4t_vRwOqUtnYGcp4?usp=sharing)
+
 ## Usage
 
 Run the script using the following command:
