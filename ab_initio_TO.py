@@ -170,11 +170,12 @@ def cryo_abinitio_TO(sym, instack=None, outvol=None, cache_file_name=None, n_the
     # Step 6.5: Comparison with true rotations #
     ############################################
 
-    logger.info("Compare with known rotations")
-    mean_ang_dist = mean_angular_distance_sym(rots_t, true_rotations, sym)
-    logger.info(
-        f"Mean angular distance between globally aligned estimates and ground truth rotations: {mean_ang_dist}\n"
-    )
+    if true_rotations is not None:
+        logger.info("Compare with known rotations")
+        mean_ang_dist = mean_angular_distance_sym(rots_t, true_rotations, sym)
+        logger.info(
+            f"Mean angular distance between globally aligned estimates and ground truth rotations: {mean_ang_dist}\n"
+        )
 
     ##################################
     #  Step 7: Volume reconstruction #
